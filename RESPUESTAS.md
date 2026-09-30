@@ -1,11 +1,10 @@
-# Deber 1 — Manejo de estado y uso de streams en Flutter
+Deber 1 — Manejo de estado y uso de streams en Flutter
 
 Estudiante: Leandro Crespo
 Repositorio: https://github.com/neanoxd/deber1-estado-streams.git
 
-==================================================
 PARTE A · La misma app, tres veces
-==================================================
+
 
 Pregunta 1
 ¿Qué pasó en el paso 3 y por qué? Ojo: el valor sí se guardó en disco. ¿Qué es exactamente lo que quedó desactualizado? Y para que el contador viajara entre las dos pantallas, ¿cuántos lugares del código tuvieron que ponerse de acuerdo?
@@ -71,10 +70,7 @@ Elección según el caso:
 - Con ocho pantallas y cinco datos compartidos: Elijo Cubit (o Riverpod), porque pasar cinco datos por constructor entre ocho pantallas generaría un desorden inmanejable y errores al navegar.
 setState sí es la opción correcta cuando se trata de estado efímero y exclusivo de un widget, como abrir un menú, animar un botón o validar un formulario local.
 
-
-==================================================
 PARTE B · Future vs Stream
-==================================================
 
 Pregunta 6
 ¿Por qué la pantalla siguió mostrando "Wi-Fi" si el Wi-Fi ya estaba apagado? ¿La app tenía un dato incorrecto, o tenía un dato correcto de un momento equivocado?
